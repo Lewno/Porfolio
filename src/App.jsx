@@ -1,13 +1,16 @@
 import Navbar from "./components/Navbar"
-
+import Banner from "./components/Banner"
 
 
 function App() {
   
 
   return (
-    <div className=" bg-gray-800 w-screen h-screen">
+    <div>
       <Navbar/>
+      <Banner/>
+      
+      
     </div>
   ) 
 }
