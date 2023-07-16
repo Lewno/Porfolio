@@ -7,6 +7,8 @@ export default {
   theme: {
     screens: {
       'md': '887px',
+      'xl': '1280px',
+      '2xl': '1536px',
     },
   },
   plugins: [],
