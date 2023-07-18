@@ -16,12 +16,13 @@ const MySkills = () => {
         {name:"bootstrap", link:"bootstrap.svg"},
         {name:"tailwind css", link:"tailwindcss.svg"},
         {name:"java", link:"java.svg"},
+        {name:"MySQL", link:"mysql.svg"},
 
     ]
 
   return (
     <section className="mb-10">
-        <h2 className="text-center text-4xl font-bold mb-2">Mis Habilidades</h2>
+        <h2 className="text-center text-5xl font-bold mb-2">Habilidades</h2>
         <div className="flex flex-wrap gap-4 justify-center">
             {
                 svgs.map((svg)=>(
