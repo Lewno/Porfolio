@@ -22,7 +22,7 @@ const MySkills = () => {
 
   return (
     <section className="mb-10">
-        <h2 className="text-center text-5xl font-bold mb-2">Habilidades</h2>
+        <h2 className="text-center text-5xl font-bold mb-8">Habilidades</h2>
         <div className="flex flex-wrap gap-4 justify-center">
             {
                 svgs.map((svg)=>(
