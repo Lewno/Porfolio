@@ -1,0 +1,13 @@
+.circle{
+    height: 26px;
+    width: 26px;
+    border-radius: 20px;
+    display: block;
+    background-color: rgb(139 92 246);
+    position: absolute;
+    z-index: 11;
+    top: 0;
+    left: 0;
+    mix-blend-mode: difference;
+    pointer-events: none;
+}

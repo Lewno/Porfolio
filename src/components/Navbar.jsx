@@ -13,7 +13,7 @@ const Navbar = () => {
 
 
   return (
-    <header className="bg-gray-900 shadow-md text-white w-full fixed top-0 left-0 z-[100]">
+    <header className="bg-gray-900 shadow-md text-white w-full fixed top-0 left-0 z-[10]">
         
         <nav className="flex md:flex-row  md:items-center w-[80%] 2xl:w-[70%] m-auto  py-4 ">
             <div className="md:w-1/3 p-0 m-0 md:block">
