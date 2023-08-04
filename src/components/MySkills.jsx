@@ -27,7 +27,7 @@ const MySkills = () => {
             {
                 svgs.map((svg)=>(
                     <div className="w-full md:w-2/5 xl:w-72 flex flex-col justify-center items-center p-4 m-4 bg-slate-900 rounded-md border" key={svg.name}>
-                       <img src={`../../src/assets/${svg.link}`} alt={svg.name} className="w-24 h-24" />  
+                       <img src={`../assets/${svg.link}`} alt={svg.name} className="w-24 h-24" />  
                        <h6 className=" mt-3  uppercase lg:text-2xl">{svg.name}</h6>   
                     </div>
                 ))
