@@ -5,7 +5,7 @@ const timeLineEdu = [
         subtitle:"Universidad Nacional de Trujillo",
         decription: "",
         date: "Marzo 2020 - Marzo 2022",
-        icon:"../../src/assets/unt.svg",
+        icon:"https://raw.githubusercontent.com/Lewno/Porfolio/49d95dbf0cf53cb7164d4d828b0e8cecbf12d989/src/assets/unt.svg",
         name:"Universidad Nacional de Trujillo"
     },
     {
@@ -13,7 +13,7 @@ const timeLineEdu = [
         subtitle:"Udemy",
         decription: "",
         date: "Octubre 2022 - presente",
-        icon:"../../src/assets/udemy.svg",
+        icon:"https://raw.githubusercontent.com/Lewno/Porfolio/49d95dbf0cf53cb7164d4d828b0e8cecbf12d989/src/assets/udemy.svg",
         name:"Udemy"
     },
     {
@@ -21,7 +21,7 @@ const timeLineEdu = [
         subtitle:"SoyHenry",
         decription: "",
         date: "Febrero 2023 - Junio 2023",
-        icon:"../../src/assets/soyhenry.svg",
+        icon:"https://raw.githubusercontent.com/Lewno/Porfolio/49d95dbf0cf53cb7164d4d828b0e8cecbf12d989/src/assets/soyhenry.svg",
         name:"SoyHenry"
     },
 ];
