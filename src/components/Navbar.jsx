@@ -1,11 +1,12 @@
 import { useState } from "react"
 
+
 const Navbar = () => {
 
     const Links = [
-        {name:"Sobre Mí", link:"/"},
-        {name:"Proyectos", link:"/"},
-        {name:"Contáctame", link:"/"}
+        {name:"Sobre Mí", link:"#sobreMi"},
+        {name:"Proyectos", link:"#proyectos"},
+        {name:"Contáctame", link:"#contactame"}
     ]
 
     const [open, setOpen] = useState(false);
@@ -44,10 +45,10 @@ const Navbar = () => {
             <div className=" flex-grow hidden md:block ">
                 <ul className=" md:flex justify-evenly items-center h-auto text-2xl px-0 ">
                     <li className="w-6 h-6 md:mx-3 hover:-translate-y-1 cursor-pointer duration-300">
-                        <a href=""><ion-icon name="logo-github"></ion-icon></a>       
+                        <a href="https://github.com/Lewno" target="_blank" rel="noreferrer"><ion-icon name="logo-github"></ion-icon></a>       
                     </li>
                     <li className="w-6 h-6 md:mx-3 hover:-translate-y-1 cursor-pointer duration-300">  
-                        <a href=""><ion-icon name="logo-linkedin"></ion-icon></a>
+                        <a href="https://www.linkedin.com/in/carlos-aaron-benites-acevedo/" target="_blank" rel="noreferrer"><ion-icon name="logo-linkedin"></ion-icon></a>
                     </li>
                     <li onClick={()=>setSun(!sun)} className="w-6 h-6 md:mx-3 hover:-translate-y-1 cursor-pointer duration-300">
                         <ion-icon name={sun ? "moon": "sunny"}></ion-icon>

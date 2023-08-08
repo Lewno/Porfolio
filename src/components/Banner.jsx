@@ -17,7 +17,7 @@ const Banner = () => {
                     <span>DESCARGAR CV</span> 
                     <ion-icon name="arrow-down-circle-outline"></ion-icon>
                 </a>
-                <a className=" p-4 m-4 rounded-lg bg-violet-600 hover:shadow-lg hover:shadow-violet-600/50 duration-300 flex gap-2 items-center text-xl" href="" > 
+                <a className=" p-4 m-4 rounded-lg bg-violet-600 hover:shadow-lg hover:shadow-violet-600/50 duration-300 flex gap-2 items-center text-xl" href="#contactame" > 
                     <span>CONTÁCTAME</span> 
                     <ion-icon  name="navigate-circle-outline"></ion-icon>   
                 </a>

@@ -2,7 +2,7 @@
 
 const Contact = () => {
   return (
-    <section className="w-full m-auto text-white mb-10">
+    <section className="w-full m-auto text-white mb-10 pt-20" id="contactame">
         <div className="w-[80%] 2xl:w-[70%] m-auto flex flex-col">
             <h2 className="text-center text-5xl font-bold mb-8">Contacto</h2>
             <div className="flex  items-center justify-center">
