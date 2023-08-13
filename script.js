@@ -10,7 +10,7 @@ window.addEventListener("mousemove",function(e){
     coords.x= e.pageX;
     coords.y= e.pageY;
 
-    console.log(coords)
+    
 });
 
 
