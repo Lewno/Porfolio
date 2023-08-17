@@ -20,14 +20,14 @@ const Navbar = () => {
 
 
 
-    <header className="bg-gray-900 shadow-md text-white w-full fixed top-0 left-0 z-[10]">
+    <header className=" dark:bg-gray-900 shadow-md dark:text-white w-full fixed top-0 left-0 z-[10]  bg-slate-200 text-black">
         
         <nav className="flex md:flex-row  md:items-center w-[80%] 2xl:w-[70%] m-auto items-center  py-4 ">
             <div className="md:w-1/3 p-0 m-0 md:block">
                 <ul className={`md:flex md:items-center absolute md:static bg-white text-black md:bg-transparent md:text-white md:z-auto z-[-1] left-0  md:w-auto md:pl-0 pl-8 w-full  transition-all duration-500 ease-in ${open ? "top-16" : "top-[-350px]"}`}>
                     {
                         Links?.map((link,index)=>(
-                            <li key={index} className="md:mx-2  md:my-0 my-7 hover:-translate-y-1 cursor-pointer duration-300 xl:text-xl">
+                            <li key={index} className="md:mx-2 text-black dark:text-white  md:my-0 my-7 hover:-translate-y-1 cursor-pointer duration-300 xl:text-xl">
                                 <a href={link.link} >{link.name}</a>
                             </li>
                             
@@ -50,11 +50,11 @@ const Navbar = () => {
             </button>  
             <div className=" flex-grow hidden md:block ">
                 <ul className=" md:flex justify-evenly items-center h-auto text-2xl px-0 ">
-                    <li className="w-8 h-8 p-1 hover:bg-white hover:text-black rounded-full md:mx-3 cursor-pointer duration-500">
+                    <li className="w-8 h-8 p-1  rounded-full md:mx-3 cursor-pointer duration-500">
                         <Github/>   
                     </li>
-                    <li className="w-8 h-8 p-1 md:mx-3 cursor-pointer duration-500 rounded-full hover:bg-blue-700">  
-                        <LinkedIn/>
+                    <li className="w-8 h-8 p-1 md:mx-3 cursor-pointer text-white duration-500 rounded-full ">  
+                        <LinkedIn />
                     </li>
                     <li onClick={()=>setMode(mode === "light" ? "dark": "light")} className={`w-8 h-8 p-1 cursor-pointer   flex items-center justify-center rounded-full ${mode === "light" ? " bg-black text-white" : " bg-white text-black" }`}>
                     {mode ==="dark" ? <Moon/> : <Sun/>}              

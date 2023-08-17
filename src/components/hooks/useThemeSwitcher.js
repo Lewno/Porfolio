@@ -1,11 +1,11 @@
-import React from 'react'
+
 import { useEffect } from 'react';
 import { useState } from 'react';
 
 const useThemeSwitcher = () => {
   
   const preferDarkQuery = "(prefer-color-scheme: dark)";
-  const [mode, setMode] = useState("");
+  const [mode, setMode] = useState("dark");
 
   useEffect(()=>{
 

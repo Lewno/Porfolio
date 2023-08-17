@@ -4,8 +4,8 @@ import timeLineEdu from '../helper/timeLineEdu';
 
 const ExperienceCard = ({edu}) => (
     <VerticalTimelineElement
-        contentStyle={{background:"rgb(15 23 42 / var(--tw-bg-opacity))", color:"#fff"}}
-        contentArrowStyle={{borderRight:"7px solid #232631"}}
+        contentStyle={{background:"rgb(124 58 237)", color:"#fff"}}
+        contentArrowStyle={{borderRight:"7px solid rgb(124 58 237)"}}
         date={edu.date}
         iconStyle={{background:"#fff"}}
         icon={
@@ -33,10 +33,10 @@ const MyEdu = () => {
   return (
     <section className="my-20"> 
         <h2 className="text-center text-5xl font-bold mb-8">Educación</h2>
-        <VerticalTimeline>
+        <VerticalTimeline className="before:bg-black dark:before:bg-white">
             {
                 timeLineEdu?.map((edu,index)=>(
-                    <ExperienceCard key={index} edu={edu} className=' bg-gray-900' />
+                    <ExperienceCard key={index} edu={edu} />
                 ))
             }
            
