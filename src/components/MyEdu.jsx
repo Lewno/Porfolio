@@ -2,12 +2,13 @@ import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timel
 import 'react-vertical-timeline-component/style.min.css';
 import timeLineEdu from '../helper/timeLineEdu';
 
-const ExperienceCard = ({edu}) => (
+const ExperienceCard = ({edu,color}) => (
     <VerticalTimelineElement
-        contentStyle={{background:"rgb(124 58 237)", color:"#fff"}}
-        contentArrowStyle={{borderRight:"7px solid rgb(124 58 237)"}}
+        contentStyle={{background:`${color == "dark" ? "rgb(17 24 39)" : "rgb(226 232 240)"}`, color:`${color == "dark" ? "#fff" : "#000"}`}}
+        contentArrowStyle={{borderRight:`7px solid ${color == "dark" ? "rgb(17 24 39)" : "rgb(226 232 240)"}`}}
         date={edu.date}
-        iconStyle={{background:"#fff"}}
+        iconStyle={{background:"#fff", color: '#000'}}
+        style={{}}
         icon={
             <div className='flex justify-center items-center w-full h-full'>
                 <img 
@@ -28,14 +29,14 @@ const ExperienceCard = ({edu}) => (
     </VerticalTimelineElement>
 )
 
-const MyEdu = () => {
+const MyEdu = ({color}) => {
   return (
     <section className="my-20"> 
         <h2 className="text-center text-5xl font-bold mb-8">Educación</h2>
         <VerticalTimeline className="before:bg-black dark:before:bg-white">
             {
                 timeLineEdu?.map((edu,index)=>(
-                    <ExperienceCard key={index} edu={edu} />
+                    <ExperienceCard key={index} edu={edu} color={color}/>
                 ))
             }
            

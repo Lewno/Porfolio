@@ -2,7 +2,7 @@ import { useState } from "react"
 import { Sun, Moon, LinkedIn, Github } from "../assets/icons-svg/icons";
 import useThemeSwitcher from "./hooks/useThemeSwitcher";
 
-const Navbar = () => {
+const Navbar = ({handleDark}) => {
 
     const Links = [
         {name:"Sobre Mí", link:"#sobreMi"},
@@ -13,8 +13,11 @@ const Navbar = () => {
     const [open, setOpen] = useState(false);
 
 
+
     const [mode, setMode] = useThemeSwitcher();
 
+    handleDark(mode);
+    
 
   return (
 

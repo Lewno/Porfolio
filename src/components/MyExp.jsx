@@ -3,16 +3,15 @@ import 'react-vertical-timeline-component/style.min.css';
 import timeLineExp from '../helper/timeLineExp';
 import useThemeSwitcher from './hooks/useThemeSwitcher';
 
-const ExperienceCard = ({edu}) => (
+const ExperienceCard = ({edu, color}) => (
+    
     <VerticalTimelineElement
-        contentStyle={{background:"rgb(124 58 237)", color:"#fff"}}
-        contentArrowStyle={{borderRight:"7px solid rgb(124 58 237)"}}
+        contentStyle={{background:`${color == "dark" ? "rgb(17 24 39)" : "rgb(226 232 240)"}`, color:`${color == "dark" ? "#fff" : "#000"}`}}
+        contentArrowStyle={{borderRight:`7px solid ${color == "dark" ? "rgb(17 24 39)" : "rgb(226 232 240)"}`}}
         date={edu.date}  
-        iconStyle={{background:"#fff", color: '#fff'}}
-        style={{}}  
-        
+        iconStyle={{background:"#fff", color: '#000'}}
         icon={
-            <div className='flex justify-center items-center w-full h-full'>
+            <div className='flex justify-center items-center w-full h-full '>
                 <img 
                     src={edu.icon}
                     alt={edu.name}
@@ -20,9 +19,9 @@ const ExperienceCard = ({edu}) => (
                 />
             </div>
         }
-        className='last:text-black'
+        
     >
-        <div >
+        <div>
             <h3 className=' text-[24px] font-bold'>
                 {edu.title}
             </h3>
@@ -32,16 +31,14 @@ const ExperienceCard = ({edu}) => (
     </VerticalTimelineElement>
 )
 
-const MyExp = () => {
-
-    const [mode, setMode] = useThemeSwitcher();
+const MyExp = ({color}) => {
   return (
     <section className="my-20"> 
         <h2 className="text-center text-5xl font-bold mb-8">Experiencia</h2>
-        <VerticalTimeline  lineColor='blue' >
+        <VerticalTimeline  className="before:bg-black dark:before:bg-white" >
             {
                 timeLineExp?.map((edu,index)=>(
-                    <ExperienceCard key={index} edu={edu}/>
+                    <ExperienceCard key={index} edu={edu}  color={color}/>
                 ))
             }
            
