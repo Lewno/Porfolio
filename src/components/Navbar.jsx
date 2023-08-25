@@ -51,10 +51,10 @@ const Navbar = () => {
             <div className=" flex-grow hidden md:block ">
                 <ul className=" md:flex justify-evenly items-center h-auto text-2xl px-0 ">
                     <li className="w-8 h-8 p-1  rounded-full md:mx-3 cursor-pointer duration-500">
-                        <Github/>   
+                        <a href="https://github.com/Lewno" target="_blank" rel="noreferrer"><Github/></a>
                     </li>
                     <li className="w-8 h-8 p-1 md:mx-3 cursor-pointer text-white duration-500 rounded-full ">  
-                        <LinkedIn />
+                        <a href="https://www.linkedin.com/in/carlos-aaron-benites-acevedo/" target="_blank" rel="noreferrer"><LinkedIn /></a>
                     </li>
                     <li onClick={()=>setMode(mode === "light" ? "dark": "light")} className={`w-8 h-8 p-1 cursor-pointer   flex items-center justify-center rounded-full ${mode === "light" ? " bg-black text-white" : " bg-white text-black" }`}>
                     {mode ==="dark" ? <Moon/> : <Sun/>}              

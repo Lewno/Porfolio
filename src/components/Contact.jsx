@@ -39,7 +39,7 @@ const Contact = () => {
         <div className="w-[80%] 2xl:w-[70%] m-auto flex flex-col">
             <h2 className="text-center text-5xl font-bold mb-8">Contacto</h2>
             <div className="flex  items-center justify-center">
-              <div className="w-full md:w-2/4 p-6 rounded-lg justify-center items-center dark:bg-gray-900 border-2 border-slate-500">
+              <div className="w-full md:w-2/4 p-6 rounded-lg justify-center bg-slate-200 items-center dark:bg-gray-900 border-2  border-violet-900">
                   <form 
                   ref={form} 
                   onSubmit={sendEmail}
@@ -53,7 +53,7 @@ const Contact = () => {
                           value={send.user_name} 
                           onChange={handleChange} 
                           placeholder="¿Cuál es tu nombre?"
-                          className=" dark:bg-gray-800 border-2 border-slate-500 py-4 px-4 dark:text-white rounded-lg outline-none "    
+                          className=" dark:bg-gray-800 border-2 border-violet-900 py-4 px-4 dark:text-white rounded-lg outline-none "    
                           />
                       </label>
                       <label className="flex flex-col" >
@@ -64,7 +64,7 @@ const Contact = () => {
                           value={send.user_email} 
                           onChange={handleChange} 
                           placeholder="¿Cuál es tu email?"
-                          className=" dark:bg-gray-800 border-2 border-slate-500 py-4 px-4 dark:text-white rounded-lg outline-none "    
+                          className=" dark:bg-gray-800 border-2 border-violet-900 py-4 px-4 dark:text-white rounded-lg outline-none "    
                           />
                       </label>
                       <label className="flex flex-col" >
@@ -75,7 +75,7 @@ const Contact = () => {
                           value={send.message}  
                           onChange={handleChange}
                           placeholder="Coloca tu mensaje..."
-                          className=" dark:bg-gray-800 border-2 border-slate-500 py-4 px-4 dark:text-white rounded-lg outline-none  resize-none"    
+                          className=" dark:bg-gray-800 border-2 border-violet-900 py-4 px-4 dark:text-white rounded-lg outline-none  resize-none"    
                           />
                       </label>
                       <input className=" text-white cursor-pointer w-40 p-3 m-auto rounded-lg bg-violet-600 hover:shadow-lg hover:shadow-violet-600/50 duration-300 text-xl" type="submit" value="ENVIAR" />

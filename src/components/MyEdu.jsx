@@ -23,7 +23,6 @@ const ExperienceCard = ({edu}) => (
                 {edu.title}
             </h3>
             <p className='m-0 font-semibold text-[16px]'>{edu.name}</p>
-            <p>{edu.decription}</p>
         </div>
 
     </VerticalTimelineElement>

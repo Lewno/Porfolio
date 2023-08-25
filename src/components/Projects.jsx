@@ -8,7 +8,7 @@ const Projects = () => {
         <div className="flex flex-wrap gap-4 justify-center">
           {
             proyects?.map((proyect, index)=>(
-              <div className="w-full md:w-2/5 flex flex-col justify-center items-center p-4 m-4 dark:bg-slate-900 rounded-md border-2 border-violet-900" key={index}>
+              <div className="w-full md:w-2/5 flex flex-col justify-center items-center p-4 m-4 bg-slate-200 dark:bg-slate-900 rounded-md border-2 border-violet-900" key={index}>
                 <img src={proyect.image} alt="" className="w-full " />
                 <section>
                   <h4 className="pt-2 text-2xl">{proyect.title}</h4>

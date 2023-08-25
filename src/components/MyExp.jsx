@@ -7,9 +7,10 @@ const ExperienceCard = ({edu}) => (
     <VerticalTimelineElement
         contentStyle={{background:"rgb(124 58 237)", color:"#fff"}}
         contentArrowStyle={{borderRight:"7px solid rgb(124 58 237)"}}
-        date={edu.date}
-        iconStyle={{background:"#000", color: '#000'}}
-        style={{}}     
+        date={edu.date}  
+        iconStyle={{background:"#fff", color: '#fff'}}
+        style={{}}  
+        
         icon={
             <div className='flex justify-center items-center w-full h-full'>
                 <img 
@@ -19,13 +20,13 @@ const ExperienceCard = ({edu}) => (
                 />
             </div>
         }
+        className='last:text-black'
     >
         <div >
             <h3 className=' text-[24px] font-bold'>
                 {edu.title}
             </h3>
             <p className='m-0 font-semibold text-[16px]'>{edu.name}</p>
-            <p>{edu.decription}</p>
         </div>
 
     </VerticalTimelineElement>
@@ -37,10 +38,10 @@ const MyExp = () => {
   return (
     <section className="my-20"> 
         <h2 className="text-center text-5xl font-bold mb-8">Experiencia</h2>
-        <VerticalTimeline className="before:bg-black dark:before:bg-white">
+        <VerticalTimeline  lineColor='blue' >
             {
                 timeLineExp?.map((edu,index)=>(
-                    <ExperienceCard key={index} edu={edu} />
+                    <ExperienceCard key={index} edu={edu}/>
                 ))
             }
            
