@@ -39,11 +39,11 @@ const Contact = () => {
         <div className="w-[80%] 2xl:w-[70%] m-auto flex flex-col">
             <h2 className="text-center text-5xl font-bold mb-8">Contacto</h2>
             <div className="flex  items-center justify-center">
-              <div className="w-full md:w-2/4 p-6 rounded-lg justify-center bg-slate-200 items-center dark:bg-gray-900 border-2  border-violet-900">
+              <div className="w-full sticky md:w-2/4 p-6 rounded-lg justify-center bg-slate-200 items-center dark:bg-gray-900 border-2  border-violet-900">
                   <form 
                   ref={form} 
                   onSubmit={sendEmail}
-                  className="w-full flex flex-col gap-8 "
+                  className="w-full flex flex-col gap-8  "
                   >
                       <label className="flex flex-col" >
                           <span className="dark:text-white mb-4">Nombre:</span>

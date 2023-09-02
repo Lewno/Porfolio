@@ -5,6 +5,7 @@ import Projects from "./components/Projects"
 import Contact from "./components/Contact"
 import Footer from "./components/Footer"
 import { useState } from "react"
+import ParticlesBackground from "./components/ParticlesBackground"
 
 function App() {
   
@@ -16,7 +17,9 @@ function App() {
 
   return (
     <div>
+      <ParticlesBackground color={color}/>
       <Navbar handleDark={handleDark}/>
+      
       <Banner/>
       <MyInfo color={color}/>
       <Projects/>
