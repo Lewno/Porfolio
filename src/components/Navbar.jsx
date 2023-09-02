@@ -27,10 +27,10 @@ const Navbar = ({handleDark}) => {
         
         <nav className="flex md:flex-row  md:items-center w-[80%] 2xl:w-[70%] m-auto items-center  py-4 ">
             <div className="md:w-1/3 p-0 m-0 md:block">
-                <ul className={`md:flex md:items-center absolute md:static bg-white text-black md:bg-transparent md:text-white md:z-auto z-[-1] left-0  md:w-auto md:pl-0 pl-8 w-full  transition-all duration-500 ease-in ${open ? "top-16" : "top-[-350px]"}`}>
+                <ul className={`md:flex md:items-center absolute md:static bg-slate-100 dark:bg-slate-900 text-black md:bg-transparent md:text-white md:z-auto z-[-1] left-0  md:w-auto md:pl-0 pl-8 w-full  transition-all duration-500 ease-in ${open ? "top-16" : "top-[-350px]"} md:border-0  border-black border-b-2 `}>
                     {
                         Links?.map((link,index)=>(
-                            <li key={index} className="md:mx-2 text-black dark:text-white  md:my-0 my-7 hover:-translate-y-1 cursor-pointer duration-300 xl:text-xl">
+                            <li key={index} className="md:mx-2 text-black dark:text-white  md:my-0 my-7 hover:-translate-y-1 cursor-pointer duration-300 xl:text-xl ">
                                 <a href={link.link} >{link.name}</a>
                             </li>
                             

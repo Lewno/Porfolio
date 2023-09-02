@@ -1,7 +1,11 @@
+import poke from "../assets/poke.png"
+import ohana from "../assets/ohana.png"
+import ram from "../assets/ram.png"
+
 const proyects = [
     {
        title:"Ohana Pastelería",
-       image:"https://github.com/Lewno/Porfolio/blob/main/src/assets/ohana2.png?raw=true",
+       image:ohana,
        description:"E-commerce de pastelería",
        tech:["react","node","sequalize"],
        github:"https://github.com/Manolo0178/PF-Cakes_team11",
@@ -9,7 +13,7 @@ const proyects = [
     },
     {
       title:"Pokemon App",
-      image:"https://github.com/Lewno/Porfolio/blob/main/src/assets/pokeapp.png?raw=true",
+      image:poke,
       description:"App de pokemon",
       tech:["react","node","sequalize"],
       github:"https://github.com/Lewno/PI-Pokemon-main",
@@ -17,7 +21,7 @@ const proyects = [
     },
    {
       title:"Rick and Morty App",
-      image:"https://github.com/Lewno/Porfolio/blob/main/src/assets/r2.png?raw=true",
+      image:ram,
       description:"App de Rick and Morty",
       tech:["react","node"],
       github:"https://github.com/Lewno/rick_and_morty",
