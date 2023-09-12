@@ -19,7 +19,6 @@ function App() {
     <div>
       <ParticlesBackground color={color}/>
       <Navbar handleDark={handleDark}/>
-      
       <Banner/>
       <MyInfo color={color}/>
       <Projects/>

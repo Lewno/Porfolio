@@ -1,4 +1,4 @@
-
+import CV from "../data/Carlos_Benites_CV.pdf"
 
 const Banner = () => {
   return (
@@ -13,7 +13,7 @@ const Banner = () => {
                 <p className=" 2xl:text-3xl text-2xl font-bold sticky">Software Developer</p>
             </div>
             <div className=" flex flex-col md:flex-row text-white">
-                <a className="p-4 m-4 sticky rounded-lg bg-violet-600 hover:shadow-lg hover:shadow-violet-600/50 duration-300 flex gap-2  items-center text-xl" href="" > 
+                <a className="p-4 m-4 sticky rounded-lg bg-violet-600 hover:shadow-lg hover:shadow-violet-600/50 duration-300 flex gap-2  items-center text-xl" href={CV} download > 
                     <span>DESCARGAR CV</span> 
                     <ion-icon name="arrow-down-circle-outline"></ion-icon>
                 </a>

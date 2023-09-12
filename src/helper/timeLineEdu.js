@@ -1,3 +1,5 @@
+import unt from "../assets/unt.png"
+
 const timeLineEdu = [
     
     {
@@ -5,7 +7,7 @@ const timeLineEdu = [
         subtitle:"Universidad Nacional de Trujillo",
         decription: "",
         date: "Marzo 2020 - Marzo 2022",
-        icon:"https://raw.githubusercontent.com/Lewno/Porfolio/49d95dbf0cf53cb7164d4d828b0e8cecbf12d989/src/assets/unt.svg",
+        icon:unt,
         name:"Universidad Nacional de Trujillo"
     },
     {
