@@ -5,7 +5,6 @@ const svgs = [
     {name:"react", link:"https://raw.githubusercontent.com/Lewno/Porfolio/49d95dbf0cf53cb7164d4d828b0e8cecbf12d989/src/assets/react.svg"},
     {name:"redux", link:"https://raw.githubusercontent.com/Lewno/Porfolio/49d95dbf0cf53cb7164d4d828b0e8cecbf12d989/src/assets/redux.svg"},
     {name:"node", link:"https://raw.githubusercontent.com/Lewno/Porfolio/49d95dbf0cf53cb7164d4d828b0e8cecbf12d989/src/assets/nodejs.svg"},
-    {name:"express", link:"https://raw.githubusercontent.com/Lewno/Porfolio/49d95dbf0cf53cb7164d4d828b0e8cecbf12d989/src/assets/express.svg"},
     {name:"postgresql", link:"https://raw.githubusercontent.com/Lewno/Porfolio/49d95dbf0cf53cb7164d4d828b0e8cecbf12d989/src/assets/postgresql.svg"},
     {name:"bootstrap", link:"https://raw.githubusercontent.com/Lewno/Porfolio/49d95dbf0cf53cb7164d4d828b0e8cecbf12d989/src/assets/bootstrap.svg"},
     {name:"tailwind css", link:"https://raw.githubusercontent.com/Lewno/Porfolio/49d95dbf0cf53cb7164d4d828b0e8cecbf12d989/src/assets/tailwindcss.svg"},
