@@ -6,6 +6,7 @@ import Contact from "./components/Contact"
 import Footer from "./components/Footer"
 import { useState } from "react"
 import ParticlesBackground from "./components/ParticlesBackground"
+import WhatApp from "./components/WhatApp"
 
 function App() {
   
@@ -17,6 +18,7 @@ function App() {
 
   return (
     <div>
+      <WhatApp/>
       <ParticlesBackground color={color}/>
       <Navbar handleDark={handleDark}/>
       <Banner/>
