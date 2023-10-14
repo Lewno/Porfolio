@@ -52,6 +52,7 @@ const Contact = () => {
                           name="user_name"
                           value={send.user_name} 
                           onChange={handleChange} 
+                          required
                           placeholder="¿Cuál es tu nombre?"
                           className=" dark:bg-gray-800 border-2 border-violet-900 py-4 px-4 dark:text-white rounded-lg outline-none "    
                           />
@@ -63,6 +64,7 @@ const Contact = () => {
                           name="user_email"
                           value={send.user_email} 
                           onChange={handleChange} 
+                          required
                           placeholder="¿Cuál es tu email?"
                           className=" dark:bg-gray-800 border-2 border-violet-900 py-4 px-4 dark:text-white rounded-lg outline-none "    
                           />
@@ -74,6 +76,7 @@ const Contact = () => {
                           name="message"
                           value={send.message}  
                           onChange={handleChange}
+                          required
                           placeholder="Coloca tu mensaje..."
                           className=" dark:bg-gray-800 border-2 border-violet-900 py-4 px-4 dark:text-white rounded-lg outline-none  resize-none"    
                           />
