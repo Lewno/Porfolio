@@ -1,4 +1,4 @@
-import CV from "../data/Carlos_Benites_CV.pdf"
+import CV from "../data/Carlos_Benites_Developer_CV.pdf"
 
 const Banner = () => {
   return (
