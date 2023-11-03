@@ -3,18 +3,18 @@ import 'react-vertical-timeline-component/style.min.css';
 import timeLineExp from '../helper/timeLineExp';
 import useThemeSwitcher from './hooks/useThemeSwitcher';
 
-const ExperienceCard = ({edu, color}) => (
+const ExperienceCard = ({exp, color}) => (
     
     <VerticalTimelineElement
         contentStyle={{background:`${color == "dark" ? "rgb(17 24 39)" : "rgb(226 232 240)"}`, color:`${color == "dark" ? "#fff" : "#000"}`}}
         contentArrowStyle={{borderRight:`7px solid ${color == "dark" ? "rgb(17 24 39)" : "rgb(226 232 240)"}`}}
-        date={edu.date}  
+        date={exp.date}  
         iconStyle={{background:"#fff", color: '#000'}}
         icon={
             <div className='flex justify-center items-center w-full h-full '>
                 <img 
-                    src={edu.icon}
-                    alt={edu.name}
+                    src={exp.icon}
+                    alt={exp.name}
                     className='w-[60%] h-[60%] object-contain'
                 />
             </div>
@@ -23,9 +23,12 @@ const ExperienceCard = ({edu, color}) => (
     >
         <div>
             <h3 className=' text-[24px] font-bold'>
-                {edu.title}
+                {exp.title}
             </h3>
-            <p className='m-0 font-semibold text-[16px]'>{edu.name}</p>
+            <h4 className='m-0 font-bold text-[18px] italic'>{exp.name}</h4>
+            <p className='m-0  text-[16px]'>{exp.decription1}</p>
+            <p className='m-0  text-[16px]'>{exp.decription2}</p>
+
         </div>
 
     </VerticalTimelineElement>
@@ -37,8 +40,8 @@ const MyExp = ({color}) => {
         <h2 className="text-center text-5xl font-bold mb-8">Experiencia</h2>
         <VerticalTimeline  className="before:bg-black dark:before:bg-white" >
             {
-                timeLineExp?.map((edu,index)=>(
-                    <ExperienceCard key={index} edu={edu}  color={color}/>
+                timeLineExp?.map((exp,index)=>(
+                    <ExperienceCard key={index} exp={exp}  color={color}/>
                 ))
             }
            
