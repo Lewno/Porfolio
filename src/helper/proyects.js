@@ -2,12 +2,21 @@ import poke from "../assets/poke.png"
 import ohana from "../assets/ohana.png"
 import ram from "../assets/ram.png"
 import medic from "../assets/medic.png"
+import workflow from "../assets/workflow.png"
 
 const proyects = [
     {
+     title:"WorkFlow",
+     image:workflow,
+     description:"E-commerce de servicios",
+     tech:["react","node","sequalize"],
+     github:"https://github.com/No-Country/s11-07-n-node-react/",
+     deploy:"https://65441fb426eac3008445a6d8--melodic-bonbon-a68839.netlify.app", 
+    },
+    {
        title:"MediPro",
        image:medic,
-       description:"E-commerce de pastelería",
+       description:"Aplicacion de hospital",
        tech:["react","node","sequalize"],
        github:"https://github.com/No-Country/s10-18-n-python-react",
        deploy:"https://s10-18-n-python-react.netlify.app/", 
