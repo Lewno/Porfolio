@@ -28,6 +28,7 @@ const Projects = () => {
               </div>
             ))
           }
+          {/* actualizacion para produccion */}
         </div>
       </div>
     </section>
