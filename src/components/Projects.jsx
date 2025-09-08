@@ -28,7 +28,7 @@ const Projects = () => {
               </div>
             ))
           }
-          {/* actualizacion para produccion */}
+          {/* actualizacion para produccion intento 2 */}
         </div>
       </div>
     </section>
